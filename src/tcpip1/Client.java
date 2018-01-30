@@ -16,6 +16,7 @@ public class Client {
 		
 		try {
 			
+			
 			System.out.println("Start Client...");
 			socket = new Socket(ip, port);
 			System.out.println("Connected OK...");
