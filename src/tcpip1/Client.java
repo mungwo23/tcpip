@@ -13,7 +13,6 @@ public class Client {
 		Socket socket = null;
 		OutputStream outs=null;
 		OutputStreamWriter outw=null;
-		
 		try {
 			
 			
