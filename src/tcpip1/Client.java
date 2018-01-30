@@ -15,6 +15,7 @@ public class Client {
 		OutputStreamWriter outw=null;
 		
 		try {
+			
 			System.out.println("Start Client...");
 			socket = new Socket(ip, port);
 			System.out.println("Connected OK...");
