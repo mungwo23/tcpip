@@ -19,12 +19,12 @@ public class Server {
 		BufferedReader br = null;
 
 		try {
+			
 			serverSocket = new ServerSocket(7777);
 			InetAddress ia = InetAddress.getLocalHost();
 			System.out.println(ia.getHostName());
 			System.out.println(ia.getHostAddress());
 			System.out.println("Start Server......");
-			
 			
 			while(true) {
 				socket = serverSocket.accept();
@@ -36,9 +36,8 @@ public class Server {
 				String receiveStr = br.readLine();
 				System.out.println(receiveStr);
 				System.out.println("End Server...");
-			
 			}
-
+			
 		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {
@@ -49,7 +48,6 @@ public class Server {
 				in.close();
 				socket.close();
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
