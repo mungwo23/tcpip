@@ -44,10 +44,9 @@ public class ServerChat {
 		
 		
 		while (true) {
-			
-			
-			Sender sender= new Sender();
-			Thread t= new Thread(sender);
+
+			Sender sender = new Sender();
+			Thread t = new Thread(sender);
 			System.out.println("Input Server Message...");
 			String msg = scanner.nextLine();
 			if (msg.equals("q")) {
@@ -55,6 +54,7 @@ public class ServerChat {
 				sender.clsoe();
 				break;
 			}
+			
 			sender.setSendMsg(msg);
 			t.start();
 
